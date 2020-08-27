@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="kr.co.adup.test.mapper.TestSelectMapper">
+
+	<select id="selectStudent" resultType="cMap" parameterType="cMap">
+		SELECT 
+			  SNO
+			, NAME
+			, DET
+			, ADDR
+			, PHONE
+		FROM student_tb
+		WHERE 1=1
+			<if test="@org.apache.commons.lang.StringUtils@isNotEmpty(sno)">
+				AND SNO = #{sno}
+			</if>
+	</select>
+
+</mapper>

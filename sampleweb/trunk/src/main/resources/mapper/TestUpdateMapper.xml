@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="kr.co.adup.test.mapper.TestUpdateMapper">
+
+	<update id="insertStudent" parameterType="cMap">
+		INSERT INTO student_tb
+		<trim prefix="SET" prefixOverrides="AND|OR">
+			<if test="@org.apache.commons.lang.StringUtils@isNotEmpty(sno)">
+				AND SNO = #{sno}
+			</if>
+			<if test="@org.apache.commons.lang.StringUtils@isNotEmpty(name)">
+				AND NAME = #{name}
+			</if>
+			<if test="@org.apache.commons.lang.StringUtils@isNotEmpty(det)">
+				AND DET = ${det}
+			</if>
+			<if test="@org.apache.commons.lang.StringUtils@isNotEmpty(addr)">
+				AND ADDR = ${addr}
+			</if>
+			<if test="@org.apache.commons.lang.StringUtils@isNotEmpty(phone)">
+				AND PHONE = ${phone}
+			</if>
+		</trim>
+		<selectKey resultType="int" keyColumn="SNO_SEQ" keyProperty="snoSeq" order="AFTER">
+			SELECT LAST_INSERT_ID()
+		</selectKey>
+	</update>
+
+	<update id="updateStudent" parameterType="cMap">
+		UPDATE student_tb 
+		<trim prefix="SET" prefixOverrides="AND|OR">
+			<if test="@org.apache.commons.lang.StringUtils@isNotEmpty(sno)">
+				AND SNO = #{sno}
+			</if>
+			<if test="@org.apache.commons.lang.StringUtils@isNotEmpty(name)">
+				AND NAME = #{name}
+			</if>
+			<if test="@org.apache.commons.lang.StringUtils@isNotEmpty(det)">
+				AND DET = ${det}
+			</if>
+			<if test="@org.apache.commons.lang.StringUtils@isNotEmpty(addr)">
+				AND ADDR = ${addr}
+			</if>
+			<if test="@org.apache.commons.lang.StringUtils@isNotEmpty(phone)">
+				AND PHONE = ${phone}
+			</if>
+		</trim>
+	</update>
+
+	<update id="deleteStudent" parameterType="cMap">
+		DELETE FROM student_tb WHERE SNO = ${sno}
+	</update>
+
+</mapper>

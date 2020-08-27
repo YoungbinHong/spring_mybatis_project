@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<b:beans xmlns="http://www.springframework.org/schema/security"
+		 xmlns:b="http://www.springframework.org/schema/beans"
+		 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.springframework.org/schema/util"
+		 xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+						http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security.xsd http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
+
+	<!-- globals configuration information
+	<util:map id="config" key-type="java.lang.String" value-type="java.lang.Object">
+	 -->
+		<!-- 로그인 페이지를 포워드할지 리다이렉트할지 설정한다.
+		<b:entry key="redirect" value="false" />
+		 -->
+
+		<!-- 중복로그인 설정 -->
+
+		<!-- 중복로그인 사용여부 사용할 경우 maximumSessions = 1, exceptionIfMaximumExceeded = false 설정으로 셋팅된다.
+		<b:entry key="duplicationLoginDisable" value="true" />
+		 -->
+
+		<!-- 세션을 생성할 수 있는 수 -1 무제한으로 생성할 수 있으며 1로 설정할 경우 다음과 같이 처리된다. 
+			1) A 계정으로 로그인 -> 세션생성 
+			2) 다른 컴퓨터에서 A 계정으로 로그인 -> 새션생성 후 1번 세션은 제거된다. 즉 1번에서 로그인된 사용자는 로그아웃 처리된다.
+		<b:entry key="maximumSessions" value="-1" />
+			 -->
+		<!-- 설정된 세션 수를 넘지 못하게 할 수 있다. maximumSessions = 1 이고 true로 설정한 경우 다음과 같이 처리된다. 
+			기존에 로그인 사용자가 있는 경우 더이상 같은 계정으로 로그인할 수 없게 된다. 
+			기존에 로그인 사용자가 로그아웃하거나 세션이 파기되면 로그인할 수 있다. 
+			만약 로그아웃하지 않고 브라우저를 닫을 경우(그외 문제로 세션id를 잊어버릴 경우) 로그아웃으로 처리되지 않기 때문에 
+			세션이 파기될때까지 다른 사용자는 로그인 할 수 없다. 세션타임아웃이 0이라면 로그인할 수 없게 된다...
+		<b:entry key="exceptionIfMaximumExceeded" value="false" />
+			 -->
+
+		<!-- RememberMe : 로그인 기억 로그인 기억은 동시 세션 제어를 하지 못한다 그래서 동시 세션 설정이되어 있더라도 무시하고 
+			로그인 기억 쿠키가 있으면 로그인 처리하게 된다. 이분을 해결하기 위해 rememberMeFilter 에서 동시 세션 제어를 호출할 수 있게 주입하였다.
+	</util:map>
+			 -->
+
+	<http pattern="/favicon.ico" security="none" />
+	<http pattern="/resources/**" security="none" />
+	<http pattern="/error/**" security="none" />
+	<http pattern="/login" security="none" />
+
+	<!-- 
+	<b:bean id="sessionRegistry" class="org.springframework.security.core.session.SessionRegistryImpl" />
+	 -->
+
+	<!-- SESSION MANAGEMENT
+	<b:bean id="sas" class="org.springframework.security.web.authentication.session.CompositeSessionAuthenticationStrategy">
+		<b:constructor-arg>
+			<b:list>
+				<b:bean class="kr.co.adup.util.http.session.ConcurrentSessionControlAuthenticationStrategySupport">
+					<b:constructor-arg name="sessionRegistry" ref="sessionRegistry" />
+					<b:constructor-arg name="maximumSessions" value="#{config.maximumSessions}" />
+					<b:constructor-arg name="exceptionIfMaximumExceeded" value="#{config.exceptionIfMaximumExceeded}" />
+					<b:property name="duplicationLoginDisable" value="#{config.duplicationLoginDisable}" />
+				</b:bean>
+
+				<b:bean class="org.springframework.security.web.authentication.session.SessionFixationProtectionStrategy">
+					<b:property name="migrateSessionAttributes" value="false" />
+				</b:bean>
+
+				<b:bean class="org.springframework.security.web.authentication.session.RegisterSessionAuthenticationStrategy">
+					<b:constructor-arg name="sessionRegistry" ref="sessionRegistry" />
+				</b:bean>
+			</b:list>
+		</b:constructor-arg>
+	</b:bean>
+	SESSION MANAGEMENT -->
+
+</b:beans>
