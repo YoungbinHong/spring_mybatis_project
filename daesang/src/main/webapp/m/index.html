@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="Content-Script-Type" content="text/javascript" />
+	<meta http-equiv="Content-Style-Type" content="text/css" />
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+	<meta name="description" content="" />
+	<meta property="og:title" content="" />
+	<meta property="og:url" content="" />
+	<meta property="og:image" content="" />
+	<meta property="og:description" content="" />
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width" />
+	<meta name="format-detection" content="telephone=no" />
+
+	<link rel="shortcut icon" type="image/x-icon" href="">
+	<link rel="stylesheet" href="../css/swiper.min.css" />
+	<link rel="stylesheet" href="../css/animate.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+	<link rel="stylesheet" href="https://kenwheeler.github.io/slick/slick/slick.css">
+	<link rel="stylesheet" href="css/common.css" />
+	
+	<script src="../js/jquery-1.11.3.min.js"></script>
+	<script src="../js/swiper.min.js"></script>
+	<script src="../js/wow.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	<script src="../js/inewsticker.js"></script>
+	<script src="js/ui.js"></script>
+	<!--[if (gte IE 6)&(lte IE 8)]><script type="text/javascript" src="../js/selectivizr-min.js"></script><![endif]-->
+	<!--[if lt IE 9]><script src="../js/html5shiv.js"></script><![endif]-->
+	<!--[if lt IE 10]><script src="../js/placeholders.min.js"></script><![endif]-->
+	<title>대상웰라이프</title>
+</head>
+<body>
+<div id="wrap">
+	<div id="header">
+		<div class="header_top">
+			<a href="#" class="btn_menu"></a>
+			<a href="#" class="nav_close"></a>
+			<h1 class="logo"><a href="index.html"><img src="images/logo.png" width="79" alt=""></a></h1>
+			<a href="#" class="btn_search"></a>
+		</div>
+		<div class="btn_slide">
+			<div class="swiper-button-prev"></div>
+			<!-- If we need pagination -->
+			<div class="swiper-pagination"></div>
+			<!-- If we need navigation buttons -->
+		    <div class="swiper-button-next"></div>
+		</div>
+	</div>
+	<div id="nav">
+		<div class="shortcut">
+			<a href="#"><img src="images/ico_gnb1.png" height="41" alt=""></a>
+			<a href="#"><img src="images/ico_gnb2.png" height="45" alt=""></a>
+			<a href="#" class="btn_qna"><img src="images/ico_gnb3.png" height="45" alt=""></a>
+			<a href="#"><img src="images/ico_gnb4.png" height="44" alt=""></a>
+		</div>
+		<div class="menu">
+			<ul>
+				<li><a href="#">NEW</a></li>
+				<li><a href="#">BEST</a></li>
+				<li><a href="#">기능별</a></li>
+				<li><a href="#">성분별</a></li>
+				<li><a href="#">대상별</a></li>
+				<li><a href="#">브랜드별</a></li>
+				<li><a href="sample.html">무료샘플신청</a></li>
+			</ul>
+		</div>
+		<div class="bottom_shortcut">
+			<a href="#"><img src="images/ico_login.png" width="73" alt=""></a>
+			<a href="#"><img src="images/ico_cs.png" width="90" alt=""></a>
+		</div>
+	</div>
+	<div id="container">
+		<div class="visual">
+			<div class="swiper-container">
+			    <!-- Additional required wrapper -->
+			    <div class="swiper-wrapper">
+			        <!-- Slides -->
+			        <div class="swiper-slide">
+			        	<img src="images/visual.jpg" width="100%" alt="" />
+			        </div>
+			        <div class="swiper-slide">
+			        	<img src="images/visual2.jpg" width="100%" alt="" />
+			        </div>
+			    </div>
+			</div>
+		</div>
+
+		<div id="contentM">	
+			<div class="wow_wrap">
+				<div class="wow slideInLeft wow_left" data-wow-duration="1.5s">
+					<img src="images/wow_left.png" width="270" alt="" />
+				</div>
+				<div class="wow slideInRight wow_right" data-wow-duration="1.5s">
+					<img src="images/wow_right.png" width="360" alt="" />
+				</div>
+			</div>
+			<div class="wow2_wrap">
+				<div class="wow fadeInUp wow2_left" data-wow-duration="0.8s">
+					<img src="images/wow2_left.png" width="245" alt="" />
+				</div>
+				<div class="wow fadeInUp wow2_bg" data-wow-duration="0.8s">
+					<img src="images/wow2_wrap_bg.png" width="23" alt="" />
+				</div>
+				<div class="wow fadeInUp wow2_right" data-wow-duration="0.8s">
+					<img src="images/wow2_right.png" width="245" alt="" />
+				</div>
+			</div>
+			<div class="product_wrap">
+				<div class="content_inner">
+					<div class="title_wrap">
+						<h2>NEW</h2>
+						<!-- <a href="#" class="more">more</a> -->
+					</div>
+					<div class="product_list">
+						<ul class="wow fadeInUp" data-wow-duration="0.8s">
+							<li>
+								<a href="detail.html">
+									<img src="images/product1.png" height="212" alt="">
+								</a>
+							</li>
+							<li>
+								<a href="detail.html">
+									<img src="images/product2.png" height="212" alt="">
+								</a>
+							</li>
+							<li>
+								<a href="detail.html">
+									<img src="images/product3.png" height="212" alt="">
+								</a>
+							</li>
+							<li>
+								<a href="detail.html">
+									<img src="images/product1.png" height="212" alt="">
+								</a>
+							</li>
+							<li>
+								<a href="detail.html">
+									<img src="images/product2.png" height="212" alt="">
+								</a>
+							</li>
+							<li>
+								<a href="detail.html">
+									<img src="images/product3.png" height="212" alt="">
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="tab_wrap">
+				<div class="tab">
+					<ul>
+						<li class="active"><a href="#">바나나</a></li>
+						<li><a href="#">그레인</a></li>
+					</ul>
+				</div>
+				<div class="tab_content_wrap">
+					<div class="tab_content first banana">
+						<div class="wow slideInLeft banana_left left_content" data-wow-duration="1s">
+							<img src="images/banana_left.png" height="307" alt="" />
+						</div>
+						<div class="wow slideInRight banana_right right_content" data-wow-duration="1s">
+							<img src="images/banana_right.png" height="307" alt="" />
+						</div>
+					</div>
+					<div class="tab_content grain">
+						<div class="wow slideInLeft grain_left left_content" data-wow-duration="1s">
+							<img src="images/grain_left.png" height="307" alt="" />
+						</div>
+						<div class="wow slideInRight grain_right right_content" data-wow-duration="1s">
+							<img src="images/grain_right.png" height="307" alt="" />
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="product_wrap">
+				<div class="content_inner">
+					<div class="title_wrap">
+						<h2>BEST</h2>
+						<!-- <a href="#" class="more">more</a> -->
+					</div>
+					<div class="product_list">
+						<ul class="wow fadeInUp" data-wow-duration="0.8s">
+							<li>
+								<a href="detail.html">
+									<img src="images/product4.png" height="212" alt="">
+								</a>
+							</li>
+							<li>
+								<a href="detail.html">
+									<img src="images/product5.png" height="212" alt="">
+								</a>
+							</li>
+							<li>
+								<a href="detail.html">
+									<img src="images/product6.png" height="212" alt="">
+								</a>
+							</li>
+							<li>
+								<a href="detail.html">
+									<img src="images/product4.png" height="212" alt="">
+								</a>
+							</li>
+							<li>
+								<a href="detail.html">
+									<img src="images/product5.png" height="212" alt="">
+								</a>
+							</li>
+							<li>
+								<a href="detail.html">
+									<img src="images/product6.png" height="212" alt="">
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div><!-- 마이밀 End -->
+
+		<div id="contentN">
+			<div class="wow3_wrap">
+				<div class="wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.3s">
+					<img src="images/wow3_top.png" width="360" alt="" />
+				</div>
+				<ul class="wow fadeInUp" data-wow-duration="0.8s">
+					<li>
+						<img src="images/wow3_img1.jpg" width="130" alt="">
+					</li>
+					<li>
+						<img src="images/wow3_img2.jpg" width="130" alt="">
+					</li>
+					<li>
+						<img src="images/wow3_img3.jpg" width="130" alt="">
+					</li>
+					<li>
+						<img src="images/wow3_img4.jpg" width="130" alt="">
+					</li>
+					<li>
+						<img src="images/wow3_img1.jpg" width="130" alt="">
+					</li>
+					<li>
+						<img src="images/wow3_img2.jpg" width="130" alt="">
+					</li>
+					<li>
+						<img src="images/wow3_img3.jpg" width="130" alt="">
+					</li>
+					<li>
+						<img src="images/wow3_img4.jpg" width="130" alt="">
+					</li>
+				</ul>
+			</div>
+			<div class="product_wrap" style="margin-top:125px;">
+				<div class="content_inner">
+					<div class="title_wrap">
+						<h2>NEW</h2>
+						<!-- <a href="#" class="more">more</a> -->
+					</div>
+					<div class="product_list">
+						<ul class="wow fadeInUp" data-wow-duration="0.8s">
+							<li>
+								<a href="detail.html">
+									<img src="images/product2-1.png" height="212" alt="">
+								</a>
+							</li>
+							<li>
+								<a href="detail.html">
+									<img src="images/product2-2.png" height="212" alt="">
+								</a>
+							</li>
+							<li>
+								<a href="detail.html">
+									<img src="images/product2-3.png" height="212" alt="">
+								</a>
+							</li>
+							<li>
+								<a href="detail.html">
+									<img src="images/product2-1.png" height="212" alt="">
+								</a>
+							</li>
+							<li>
+								<a href="detail.html">
+									<img src="images/product2-2.png" height="212" alt="">
+								</a>
+							</li>
+							<li>
+								<a href="detail.html">
+									<img src="images/product2-3.png" height="212" alt="">
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="tab_wrap">
+				<div class="tab">
+					<ul>
+						<li class="active"><a href="#">일반 영양식</a></li>
+						<li><a href="#">전문 영양식</a></li>
+						<li><a href="#">영양 보충식</a></li>
+						<li><a href="#">점도 증진제</a></li>
+						<li><a href="#">영양 간식</a></li>
+					</ul>
+				</div>
+				<div class="tab_content_wrap">
+					<div class="tab_content first">
+						<div class="wow slideInLeft newcare_left left_content" data-wow-duration="1s">
+							<img src="images/newcare_left.png" height="307" alt="" />
+						</div>
+						<div class="wow slideInRight newcare_right right_content" data-wow-duration="1s">
+							<img src="images/newcare_right.png" height="307" alt="" />
+						</div>
+					</div>
+					<div class="tab_content">
+						<div class="wow slideInLeft newcare_left left_content" data-wow-duration="1s">
+							<img src="images/newcare_left.png" height="307" alt="" />
+						</div>
+						<div class="wow slideInRight newcare_right right_content" data-wow-duration="1s">
+							<img src="images/newcare_right.png" height="307" alt="" />
+						</div>
+					</div>
+					<div class="tab_content">
+						<div class="wow slideInLeft newcare_left left_content" data-wow-duration="1s">
+							<img src="images/newcare_left.png" height="307" alt="" />
+						</div>
+						<div class="wow slideInRight newcare_right right_content" data-wow-duration="1s">
+							<img src="images/newcare_right.png" height="307" alt="" />
+						</div>
+					</div>
+					<div class="tab_content">
+						<div class="wow slideInLeft newcare_left left_content" data-wow-duration="1s">
+							<img src="images/newcare_left.png" height="307" alt="" />
+						</div>
+						<div class="wow slideInRight newcare_right right_content" data-wow-duration="1s">
+							<img src="images/newcare_right.png" height="307" alt="" />
+						</div>
+					</div>
+					<div class="tab_content">
+						<div class="wow slideInLeft newcare_left left_content" data-wow-duration="1s">
+							<img src="images/newcare_left.png" height="307" alt="" />
+						</div>
+						<div class="wow slideInRight newcare_right right_content" data-wow-duration="1s">
+							<img src="images/newcare_right.png" height="307" alt="" />
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="product_wrap">
+				<div class="content_inner">
+					<div class="title_wrap">
+						<h2>BEST</h2>
+						<!-- <a href="#" class="more">more</a> -->
+					</div>
+					<div class="product_list">
+						<ul class="wow fadeInUp" data-wow-duration="0.8s">
+							<li>
+								<a href="detail.html">
+									<img src="images/product2-4.png" height="212" alt="">
+								</a>
+							</li>
+							<li>
+								<a href="detail.html">
+									<img src="images/product2-5.png" height="212" alt="">
+								</a>
+							</li>
+							<li>
+								<a href="detail.html">
+									<img src="images/product2-6.png" height="212" alt="">
+								</a>
+							</li>
+							<li>
+								<a href="detail.html">
+									<img src="images/product2-4.png" height="212" alt="">
+								</a>
+							</li>
+							<li>
+								<a href="detail.html">
+									<img src="images/product2-5.png" height="212" alt="">
+								</a>
+							</li>
+							<li>
+								<a href="detail.html">
+									<img src="images/product2-6.png" height="212" alt="">
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div><!-- 뉴케어 End -->
+
+		<section class="line_notice">
+			<div class="line_notice_left"></div>
+			<div class="line_notice_right"></div>
+			<div class="line_notice_bg clearfix">
+				<div class="line_notice_bgl">
+					<div class="line_notice_inner clearfix">
+						<dl class="line_notice_inner_l clearfix">
+							<dt>
+								공지사항
+							</dt>
+							<dd>
+								<ul class="news_result">
+									<li>
+										<a href="#">
+											<p>웰라이프몰 개편 및 연간대행사 애드업 선정</p>
+											<span>2019.05.25</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<p>웰라이프몰 개편 및 연간대행사 애드업 선정</p>
+											<span>2019.05.25</span>
+										</a>
+									</li>
+								</ul>
+							</dd>
+						</dl>
+						<p class="line_notice_inner_r">
+							<span><a href="javascript:void(0);" title="공지사항 더보기">더보기</a></span>
+						</p>
+					</div>
+				</div>
+				<div class="line_notice_bgr clearfix">
+					<a href="javascript:void(0);">
+						<p class="prom_ttl">대상웰라이프몰 5월 프로모션</p>
+						<span class="btn_prom"><img src="images/ico_slide_down.png" width="15" alt="" role="button" /></span>
+					</a>
+				</div>
+			</div>
+		</section>
+		<section class="main_prom_bnr">
+			<div class="main_prom_bnr_swiper slider">
+				<ul class="main_prom_bxslider">
+					<li><img src="images/banner_slider1.jpg" alt=""></li>
+					<li><img src="images/banner_slider2.jpg" alt=""></li>
+					<li><img src="images/banner_slider3.jpg" alt=""></li>
+				</ul>
+				<div class="main_slider_controller">
+					<div class="main_slider_controls"></div>
+				</div>
+			</div>
+		</section>
+
+		<div class="banner">
+			<a href="#">
+				<img src="images/banner.jpg" alt="" />
+			</a>
+		</div>
+		<div class="product_wrap type2" style="margin-top:52px;">
+			<div class="content_inner">
+				<div class="title_wrap">
+					<h2>이달의 추천상품</h2>
+					<!-- <a href="#" class="more">more</a> -->
+				</div>
+				<div class="product_list2 product_list3">
+					<ul class="wow fadeInUp" data-wow-duration="0.8s">
+						<li>
+							<a href="#">
+								<img src="images/product_x261_1.png" width="130" alt="">
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/product_x261_2.png" width="130" alt="">
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/product_x261_3.png" width="130" alt="">
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/product_x261_4.png" width="130" alt="">
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/product_x261_1.png" width="130" alt="">
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/product_x261_2.png" width="130" alt="">
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/product_x261_3.png" width="130" alt="">
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/product_x261_4.png" width="130" alt="">
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="cs_wrap">
+			<img src="images/cs.png" height="100" alt="" />
+		</div>
+		<div class="insta_wrap">
+			<img src="images/insta.png" height="304" alt="" />
+		</div>
+	</div>
+	<div id="footer">
+		<div class="content_inner">
+			<img src="images/footer.jpg" height="152" alt="" />
+		</div>
+	</div>
+	<div id="channel">
+		<img src="images/channel.png" width="100%" alt="" />
+	</div>
+	<div id="popSearch">
+		<img src="images/pop_search.jpg" width="330" alt="">
+		<a href="#" class="btn_close"></a>
+	</div>
+</div>
+<script>
+$(document).ready(function(){
+
+	// wow.js
+	new WOW().init();
+
+	// 공지사항 slide
+    $('ul.news_result').inewsticker({
+        speed        : 2500,
+        effect          : 'slide',
+        dir             : 'ltr',
+        font_size   : 13,
+        color           : '#fff',
+        delay_after : 1000
+    });
+
+    // 프로모션 slide 
+    var mpSlider = $('.main_prom_bxslider').bxSlider({
+        infiniteLoop:true,
+        controls:false,
+        auto:true,
+        autoControls:true,
+        autoControlsCombine:true,
+        speed:500,
+        autoHover:false,
+    });
+
+    var lineNotice = false;
+
+    $('.line_notice_bgr a').click(function () {
+      if (lineNotice == false) {
+        $('.line_notice_bgr a span.btn_prom').find('img').attr('src', 'images/ico_slide_up.png');
+        $('.main_prom_bnr').slideDown();
+        $('body').animate({
+          scrollTop: $('.line_notice_bgr').offset().top
+        }, 1000);
+        lineNotice = true;
+        mpSlider.reloadSlider();
+      } else {
+        $('.line_notice_bgr a span.btn_prom').find('img').attr('src', 'images/ico_slide_down.png');
+        $('.main_prom_bnr').slideUp(400,function(){
+        	mpSlider.reloadSlider();
+        });
+        lineNotice = false;
+      }
+    });
+
+    // 메인 visual slide
+    var visualSwiper = new Swiper ('.visual .swiper-container', {
+        loop: true,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        pagination: {
+        el:'.swiper-pagination',
+            clickable: true,
+        },
+        speed:700,
+        effect:'fade'
+    });
+    
+    visualSwiper.on('slideChangeTransitionStart', function () {
+        if(this.activeIndex == 2){
+            $("#contentM").hide();
+            $("#contentN").fadeIn();
+        }else{
+            $("#contentN").hide();
+            $("#contentM").fadeIn();
+        }
+    });
+
+    $('.product_list ul').slick({
+		centerMode: true,
+		slidesToShow: 3,
+		variableWidth: true,
+		autoplay: true,
+		autoplaySpeed: 2000,
+	});
+	$('.product_list2 ul').slick({
+		centerMode: true,
+		slidesToShow: 4,
+		variableWidth: true,
+		autoplay: true,
+		autoplaySpeed: 2000,
+	});
+	$('.wow3_wrap ul').slick({
+		centerMode: true,
+		slidesToShow: 4,
+		variableWidth: true,
+		autoplay: true,
+		autoplaySpeed: 2000,
+	});
+
+    // tab
+    $(".tab_wrap .tab li").click(function(e){
+        e.preventDefault();
+
+        var idx = $(this).index();
+        $(this).siblings().removeClass("active");
+        $(this).addClass("active");
+
+        $(this).parent().parent().next(".tab_content_wrap").find(".tab_content").hide();
+        $(this).parent().parent().next(".tab_content_wrap").find(".tab_content").eq(idx).show();
+        $(this).parent().parent().next(".tab_content_wrap").find(".tab_content").find(".left_content").css({
+                "visibility":"visible",
+                "animation-duration":"1s",
+                "animation-name":"slideInLeft"
+        });
+        $(this).parent().parent().next(".tab_content_wrap").find(".tab_content").find(".right_content").css({
+                "visibility":"visible",
+                "animation-duration":"1s",
+                "animation-name":"slideInRight"
+        });
+    });
+});
+</script>
+</body>
+</html>

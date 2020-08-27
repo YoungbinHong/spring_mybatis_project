@@ -1,0 +1,520 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <!-- Meta, title, CSS, favicons, etc. -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <script type="text/javascript" src="../js/lib/jquery-1.12.4.min.js"></script>
+  <!-- <title>Gentelella Alela! | </title> -->
+
+  <!-- Bootstrap -->
+  <link href="../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link href="../vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <!-- NProgress -->
+  <link href="../vendors/nprogress/nprogress.css" rel="stylesheet">
+  <!-- iCheck -->
+  <link href="../vendors/iCheck/skins/flat/green.css" rel="stylesheet">
+
+  <!-- Custom Theme Style -->
+  <link href="../build/css/custom.min.css" rel="stylesheet">
+</head>
+
+<body class="nav-md">
+  <div class="container body">
+    <div class="main_container">
+      <div class="col-md-3 left_col">
+        <div class="left_col scroll-view">
+
+          <!-- <div class="clearfix"></div> -->
+
+          <div class="clearfix"></div>
+
+          <!-- menu profile quick info -->
+          <div class="profile clearfix">
+            <h1 class="text-center mt-4" style="color: #fff;">ETS</h1>
+          </div>
+          <!-- /menu profile quick info -->
+
+          <!-- <br /> -->
+
+          <!-- sidebar menu -->
+          <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+            <ul class="nav side-menu">
+              <li id="member" style="width: 100%;"><a href='/트라움/gentelella-master/production/2.회원%20관리.html'><i class="fa fa-user"></i> 회원 관리</a></li>
+              <li style="width: 100%;"><a><i class="fa fa-history"></i> 로그 관리<span class="fa fa-chevron-down"></span></a>
+                <ul class="nav child_menu">
+                  <li><a href="#none">접속 로그</a></li>
+                  <li><a href="#none">주문 로그</a></li>
+                </ul>
+              </li>
+              <li style="width: 100%;"><a><i class="fa fa-credit-card"></i> 결제 관리<span class="fa fa-chevron-down"></span></a>
+                <ul class="nav child_menu">
+                  <li><a href="#none">이용권 관리</a></li>
+                  <li><a href="#none">레퍼럴 관리</a></li>
+                  <li><a href="#none">이용권 결제 리스트</a></li>
+                </ul>
+              </li>
+              <li style="width: 100%;"><a><i class="fa fa-bell"></i> 공지 사항<span class="fa fa-chevron-down"></span></a>
+                <ul class="nav child_menu">
+                  <li><a href="#none">텍스트 공지</a></li>
+                  <li><a href="#none">롤링 공지</a></li>
+                  <li><a href="#none">텔레그램 발송</a></li>
+                </ul>
+              </li>
+              <li style="width: 100%;"><a><i class="fa fa-database"></i> OP</a></li>
+              <li style="width: 100%;"><a><i class="fa fa-calendar-o"></i> 이벤트<span class="fa fa-chevron-down"></span></a>
+                <ul class="nav child_menu">
+                  <li><a href="#none">이벤트 등록</a></li>
+                  <li><a href="#none">이벤트 관리</a></li>
+                </ul>
+              </li>
+              <li style="width: 100%;"><a><i class="fa fa-line-chart"></i> 통계</a></li>
+              <li style="width: 100%;"><a><i class="fa fa-gear"></i> 관리자 권한<span class="fa fa-chevron-down"></span></a>
+                <ul class="nav child_menu">
+                  <li><a href="#none">계정 관리</a></li>
+                  <li><a href="#none">권한 관리</a></li>
+                  <li><a href="#none">관리자 로그</a></li>
+                </ul>
+              </li>
+              <li style="width: 100%;"><a><i class="fa fa-sign-in"></i> 가입 승인</a></li>
+            </ul>
+          </div>
+          <!-- /sidebar menu -->
+        </div>
+      </div>
+
+      <!-- top navigation -->
+      <div class="top_nav">
+        <div class="nav_menu">
+          <div class="nav toggle">
+            <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+          </div>
+          <nav class="nav navbar-nav">
+            <ul class=" navbar-right">
+              <li class="nav-item dropdown open" style="padding-left: 15px;">
+                <a href="javascript:;" class="user-profile dropdown-toggle" aria-haspopup="true" id="navbarDropdown"
+                  data-toggle="dropdown" aria-expanded="false">
+                  <img src="images/img.jpg" alt="">John Doe
+                </a>
+                <div class="dropdown-menu dropdown-usermenu pull-right" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="javascript:;">Profile</a>
+                  <a class="dropdown-item" href="javascript:;">
+                    <span class="badge bg-red pull-right">50%</span>
+                    <span>Settings</span>
+                  </a>
+                  <a class="dropdown-item" href="javascript:;">Help</a>
+                  <a class="dropdown-item" href="login.html"><i class="fa fa-sign-out pull-right"></i> Log Out</a>
+                </div>
+              </li>
+
+              <li role="presentation" class="nav-item dropdown open">
+                <a href="javascript:;" class="dropdown-toggle info-number" id="navbarDropdown1" data-toggle="dropdown"
+                  aria-expanded="false">
+                  <i class="fa fa-envelope-o"></i>
+                  <span class="badge bg-green">6</span>
+                </a>
+                <ul class="dropdown-menu list-unstyled msg_list" role="menu" aria-labelledby="navbarDropdown1">
+                  <li class="nav-item">
+                    <a class="dropdown-item">
+                      <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                      <span>
+                        <span>John Smith</span>
+                        <span class="time">3 mins ago</span>
+                      </span>
+                      <span class="message">
+                        Film festivals used to be do-or-die moments for movie makers. They were where...
+                      </span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="dropdown-item">
+                      <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                      <span>
+                        <span>John Smith</span>
+                        <span class="time">3 mins ago</span>
+                      </span>
+                      <span class="message">
+                        Film festivals used to be do-or-die moments for movie makers. They were where...
+                      </span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="dropdown-item">
+                      <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                      <span>
+                        <span>John Smith</span>
+                        <span class="time">3 mins ago</span>
+                      </span>
+                      <span class="message">
+                        Film festivals used to be do-or-die moments for movie makers. They were where...
+                      </span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="dropdown-item">
+                      <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                      <span>
+                        <span>John Smith</span>
+                        <span class="time">3 mins ago</span>
+                      </span>
+                      <span class="message">
+                        Film festivals used to be do-or-die moments for movie makers. They were where...
+                      </span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <div class="text-center">
+                      <a class="dropdown-item">
+                        <strong>See All Alerts</strong>
+                        <i class="fa fa-angle-right"></i>
+                      </a>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <!-- /top navigation -->
+
+
+      <!-- page content -->
+
+      <div class="right_col" role="main">
+        <div class="col-md-12 col-sm-12 ">
+          <div class="page-title">
+            <div class="title_left">
+              <h3>레퍼럴 관리</h3>
+            </div>
+          </div>
+          <div class="x_panel" style="padding-top: 30px;">
+            <div class="input-group justify-content-between">
+              <form name="" id="" method="POST" style="width: 100%;">
+                <div class="table-responsive">
+                <table class="table jambo_table bulk_action">
+                  <colgroup>
+                    <col width="200"/>
+                    <col width="*"/>
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <th scope="row" class="text-center">레퍼럴 코드 이름</th>
+                      <td>
+                        <input type="text" name="" id="" value="" class="form-control" placeholder="20200701_마케팅 블로그 유입"/>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row" class="bg-gray-100 text-center">레퍼럴 코드 등록</th>
+                      <td colspan="">
+                        <input type="text" name="" id="" value="" class="form-control col-md-9" placeholder="URL" />
+                        <div class="col-md-1"></div>
+                        <button type="button" class="btn btn-success btn-sm col-md-2 m-0 btn-frm">저장</button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                </div>
+              </form>
+            </div>
+
+            <div style="padding:10px; font-weight: 700;">
+              총 <span style="color: red;">6</span>건</div>
+
+            <div class="table-responsive">
+              <table class="table jambo_table bulk_action">
+                <colgroup>
+                  <col width="10%" />
+                  <col width="15%" />
+                  <col width="10%" />
+                  <col width="30%" />
+                  <col width="15%" />
+                  <col width="20%" />
+                </colgroup>
+                <thead>
+                  <tr class="headings">
+                    <th class="column-title text-center">No</th>
+                    <th class="column-title text-center" colspan="2">레퍼럴 코드</th>
+                    <th class="column-title text-center">레퍼럴 코드 이름</th>
+                    <th class="column-title text-center">유입 리스트</th>
+                    <th class="column-title text-center">상태</th>
+                    <th class="bulk-actions" colspan="6">
+                      <a class="antoo" style="color:#fff; font-weight:500;">총<span class="action-cnt"> </span>건</a>
+                    </th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  <tr class="even pointer">
+                    <td class="text-center">5</td>
+                    <td class="text-center">https://ftx.com/#a=3270227</td>
+                    <td class="text-center"><button type="button"
+                        class="btn btn-secondary btn-sm">copy</button></td>
+                    <td class="text-center">20200703_마케팅 블로그 유입</td>
+                    <td class="text-center"><button type="button"
+                        class="btn btn-success btn-sm" data-toggle="modal" data-target='#checkInflowList'>보기</button>
+                    </td>
+                    <td class="text-center">사용중</td>
+                  </tr>
+                  <tr class="odd pointer">
+                    <td class="text-center">5</td>
+                    <td class="text-center">https://ftx.com/#a=3270227</td>
+                    <td class="text-center"><button type="button"
+                        class="btn btn-secondary btn-sm">copy</button></td>
+                    <td class="text-center">20200703_마케팅 블로그 유입</td>
+                    <td class="text-center"><button type="button"
+                        class="btn btn-success btn-sm" data-toggle="modal" data-target='#checkInflowList'>보기</button>
+                    </td>
+                    <td class="text-center">사용중</td>
+                  </tr>
+                  <tr class="even pointer">
+                    <td class="text-center">5</td>
+                    <td class="text-center">https://ftx.com/#a=3270227</td>
+                    <td class="text-center"><button type="button"
+                        class="btn btn-secondary btn-sm">copy</button></td>
+                    <td class="text-center">20200703_마케팅 블로그 유입</td>
+                    <td class="text-center"><button type="button"
+                        class="btn btn-success btn-sm" data-toggle="modal" data-target='#checkInflowList'>보기</button>
+                    </td>
+                    <td class="text-center">사용중</td>
+                  </tr>
+                  <tr class="odd pointer">
+                    <td class="text-center">5</td>
+                    <td class="text-center">https://ftx.com/#a=3270227</td>
+                    <td class="text-center"><button type="button"
+                        class="btn btn-secondary btn-sm">copy</button></td>
+                    <td class="text-center">20200703_마케팅 블로그 유입</td>
+                    <td class="text-center"><button type="button"
+                        class="btn btn-success btn-sm" data-toggle="modal" data-target='#checkInflowList'>보기</button>
+                    </td>
+                    <td class="text-center">사용중</td>
+                  </tr>
+                  <tr class="even pointer">
+                    <td class="text-center">5</td>
+                    <td class="text-center">https://ftx.com/#a=3270227</td>
+                    <td class="text-center"><button type="button"
+                        class="btn btn-secondary btn-sm">copy</button></td>
+                    <td class="text-center">20200703_마케팅 블로그 유입</td>
+                    <td class="text-center"><button type="button"
+                        class="btn btn-success btn-sm" data-toggle="modal" data-target='#checkInflowList'>보기</button>
+                    </td>
+                    <td class="text-center">사용중</td>
+                  </tr>
+                  <tr class="odd pointer">
+                    <td class="text-center">5</td>
+                    <td class="text-center">https://ftx.com/#a=3270227</td>
+                    <td class="text-center"><button type="button"
+                        class="btn btn-secondary btn-sm">copy</button></td>
+                    <td class="text-center">20200703_마케팅 블로그 유입</td>
+                    <td class="text-center"><button type="button"
+                        class="btn btn-success btn-sm" data-toggle="modal" data-target='#checkInflowList'>보기</button>
+                    </td>
+                    <td class="text-center">사용중</td>
+                  </tr>
+
+                </tbody>
+              </table>
+            </div>
+            <div>
+              <nav aria-label="Page navigation">
+                <ul class="pagination justify-content-center">
+                  <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Previous">
+                      <span aria-hidden="true">&laquo;</span>
+                    </a>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Next">
+                      <span aria-hidden="true">&raquo;</span>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+
+        <!-- 26 유입 리스트 확인 모달 -->
+        <div class="modal" id="checkInflowList">
+          <div class="modal-dialog modal-dialog-center modal-lg" style="min-width: 70%">
+            <div class="modal-content">
+              <div class="modal-body">
+                <div class="container text-center">
+                  <div class="input-group justify-content-between">
+                    <form name="" id="" method="POST" style="width: 100%;">
+                      <div class="table-responsive">
+                        <table class="table jambo_table bulk_action">
+                          <colgroup>
+                            <col width="200" />
+                            <col width="*" />
+                          </colgroup>
+                          <tbody>
+                            <tr>
+                              <th scope="row" class="text-center">ID 검색</th>
+                              <td>
+                                <input type="text" class="form-control" placeholder="">
+                              </td>
+                            </tr>
+                            <tr>
+                              <th scope="row" class="text-center">검색</th>
+                              <td>
+                                <input type="text" class="form-control" placeholder="">
+                              </td>
+                            </tr>
+
+                            <tr>
+                              <th scope="row" class="text-center">기간 설정</th>
+                              <td>
+                                <div class="col-md-9 p-0">
+                                  <div class="datepicker_wrap">
+                                    <input id="" name="date" class="datepicker form-control" type="date" required="required" onfocus="this.type='date'">
+                                    <input id="" name="date" class="datepicker form-control" type="date" required="required" onfocus="this.type='date'">
+                                  </div>  
+                                </div>
+                                <div class="col-md-1"></div>
+                                <div class="col-md-2 text-left p-0 m-0">
+                                  <button type="button" class="btn btn-success btn-sm wd100 m-0 btn-frm">저장</button>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+
+                        <div class="input-group justify-content-between mt-5">
+                          <span class="pt-3">총 <span style="color: red;">5</span>건</span>
+                          <button type="button" class="btn btn-light border">Excel 다운로드</button>
+                        </div>
+
+                        <!-- 테이블 -->
+                        <div class="table-responsive">
+                          <table class="table table-striped jambo_table bulk_action">
+                            <thead>
+                              <tr class="headings">
+                                <th>No.</th>
+                                <th>유입 날짜</th>
+                                <th>ID</th>
+                                <th>국가</th>
+                                <th>Timezone</th>
+                                <th>Telegram ID</th>
+                                <th>레퍼럴 코드</th>
+                              </tr>
+                            </thead>
+
+                            <tbody>
+                              <tr>
+                                <td>5</td>
+                                <td>2020-07-01 15:32:35</td>
+                                <td>tetetete21@gmail.com</td>
+                                <td>Algeria</td>
+                                <td>(GMT-05:00) Havana</td>
+                                <td>BeautyGOT</td>
+                                <td>https://www.coinbitler.com/ftxftx</td>
+                              </tr>
+                              <tr>
+                                <td>4</td>
+                                <td>2020-07-01 15:32:35</td>
+                                <td>tetetete21@gmail.com</td>
+                                <td>Algeria</td>
+                                <td>(GMT-05:00) Havana</td>
+                                <td>BeautyGOT</td>
+                                <td>https://www.coinbitler.com/ftxftx</td>
+                              </tr>
+                              <tr>
+                                <td>3</td>
+                                <td>2020-07-01 15:32:35</td>
+                                <td>tetetete21@gmail.com</td>
+                                <td>Algeria</td>
+                                <td>(GMT-05:00) Havana</td>
+                                <td>BeautyGOT</td>
+                                <td>https://www.coinbitler.com/ftxftx</td>
+                              </tr>
+                              <tr>
+                                <td>2</td>
+                                <td>2020-07-01 15:32:35</td>
+                                <td>tetetete21@gmail.com</td>
+                                <td>Algeria</td>
+                                <td>(GMT-05:00) Havana</td>
+                                <td>BeautyGOT</td>
+                                <td>https://www.coinbitler.com/ftxftx</td>
+                              </tr>
+                              <tr>
+                                <td>1</td>
+                                <td>2020-07-01 15:32:35</td>
+                                <td>tetetete21@gmail.com</td>
+                                <td>Algeria</td>
+                                <td>(GMT-05:00) Havana</td>
+                                <td>BeautyGOT</td>
+                                <td>https://www.coinbitler.com/ftxftx</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                        <!-- 테이블 END -->
+                        <!-- 페이지 번호 넘김 -->
+                        <div>
+                          <nav aria-label="Page navigation">
+                            <ul class="pagination justify-content-center">
+                              <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Previous">
+                                  <span aria-hidden="true">&laquo;</span>
+                                </a>
+                              </li>
+                              <li class="page-item"><a class="page-link" href="#">1</a></li>
+                              <li class="page-item"><a class="page-link" href="#">2</a></li>
+                              <li class="page-item"><a class="page-link" href="#">3</a></li>
+                              <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Next">
+                                  <span aria-hidden="true">&raquo;</span>
+                                </a>
+                              </li>
+                            </ul>
+                          </nav>
+                        </div>
+                        <!-- 페이지 번호 넘김 END -->
+                        <button type="button" class="btn btn-secondary text-center" data-dismiss="modal">닫기</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 26 유입 리스트 확인 모달 END -->
+
+      </div>
+      <!-- /page content -->
+
+      <!-- footer content -->
+      <footer>
+        <div class="clearfix"></div>
+      </footer>
+      <!-- /footer content -->
+    </div>
+  </div>
+
+  <!-- jQuery -->
+  <script src="../vendors/jquery/dist/jquery.min.js"></script>
+  <!-- Bootstrap -->
+  <script src="../vendors/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- FastClick -->
+  <script src="../vendors/fastclick/lib/fastclick.js"></script>
+  <!-- NProgress -->
+  <script src="../vendors/nprogress/nprogress.js"></script>
+  <!-- iCheck -->
+  <script src="../vendors/iCheck/icheck.min.js"></script>
+
+  <!-- Custom Theme Scripts -->
+  <script src="../build/js/custom.min.js"></script>
+</body>
+
+</html>

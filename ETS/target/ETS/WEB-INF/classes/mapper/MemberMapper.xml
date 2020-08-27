@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="ETS.member.mapper.MemberMapper">
+	
+	<select id="showMemberCount" resultType="cMap" parameterType="dMap">
+		SELECT ID
+			 , TELEGRAM_ID
+			 , 
+	</select>
+	
+	<select id="showMember" resultType="cMap" parameterType="dMap">
+		SELECT NO
+		     , REGISTER_DATE
+		     , ID
+		     , NATION
+		     , TIME_ZONE
+		     , TELEGRAM_ID
+		     , VOUCHER_TYPE
+		     , REFERRAL_TYPE
+		     , STATUS
+		     , LANGUAGE_OF_TELEGRAM
+		FROM member
+		
+		WHERE 1=1
+		
+			<if test="@org.apache.commons.lang.StringUtils@isNotEmpty(searchID)">
+				AND ID like '%${searchID}%'
+			</if>
+			
+			<if test="@org.apache.commons.lang.StringUtils@isNotEmpty(searchTelegramID)">
+				AND TELEGRAM_ID like '%${searchTelegramID}%'
+			</if>
+			
+			<if test="@org.apache.commons.lang.StringUtils@isNotEmpty(voucherType)">
+				AND VOUCHER_TYPE like '%${voucherType}%'
+			</if>
+			
+			<if test="@org.apache.commons.lang.StringUtils@isNotEmpty(searchType2)">
+				AND NATION like '%${searchType2}%'
+				OR TIME_ZONE like '%${searchType2}%'
+				OR LANGUAGE_OF_TELEGRAM like '%${searchType2}%'
+			</if>
+			
+	</select>
+
+</mapper>

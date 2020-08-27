@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script type="text/javascript" src="../js/lib/jquery-1.12.4.min.js"></script>
+    <!-- <title>Gentelella Alela! | </title> -->
+
+    <!-- Bootstrap -->
+    <link href="../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="../vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- NProgress -->
+    <link href="../vendors/nprogress/nprogress.css" rel="stylesheet">
+    <!-- iCheck -->
+   <link href="../vendors/iCheck/skins/flat/green.css" rel="stylesheet">
+
+    <!-- Custom Theme Style -->
+    <link href="../build/css/custom.min.css" rel="stylesheet">
+  </head>
+
+  <body class="nav-md">
+    <div class="container body">
+      <div class="main_container">
+        <div class="col-md-3 left_col">
+          <div class="left_col scroll-view">
+
+            <div class="clearfix"></div>
+
+            <!-- menu profile quick info -->
+            <div class="profile clearfix">
+              <h1 class="text-center mt-4" style="color: #fff;">ETS</h1>
+            </div>
+            <!-- /menu profile quick info -->
+
+            <!-- <br />             -->
+
+
+            <!-- sidebar menu -->
+            <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+              <ul class="nav side-menu">
+                <li id="member" style="width: 100%;"><a href='/트라움/gentelella-master/production/2.회원%20관리.html'><i class="fa fa-user"></i> 회원 관리</a></li>
+                <li style="width: 100%;"><a><i class="fa fa-history"></i> 로그 관리<span class="fa fa-chevron-down"></span></a>
+                  <ul class="nav child_menu">
+                    <li><a href="#none">접속 로그</a></li>
+                    <li><a href="#none">주문 로그</a></li>
+                  </ul>
+                </li>
+                <li style="width: 100%;"><a><i class="fa fa-credit-card"></i> 결제 관리<span class="fa fa-chevron-down"></span></a>
+                  <ul class="nav child_menu">
+                    <li><a href="#none">이용권 관리</a></li>
+                    <li><a href="#none">레퍼럴 관리</a></li>
+                    <li><a href="#none">이용권 결제 리스트</a></li>
+                  </ul>
+                </li>
+                <li style="width: 100%;"><a><i class="fa fa-bell"></i> 공지 사항<span class="fa fa-chevron-down"></span></a>
+                  <ul class="nav child_menu">
+                    <li><a href="#none">텍스트 공지</a></li>
+                    <li><a href="#none">롤링 공지</a></li>
+                    <li><a href="#none">텔레그램 발송</a></li>
+                  </ul>
+                </li>
+                <li style="width: 100%;"><a><i class="fa fa-database"></i> OP</a></li>
+                <li style="width: 100%;"><a><i class="fa fa-calendar-o"></i> 이벤트<span class="fa fa-chevron-down"></span></a>
+                  <ul class="nav child_menu">
+                    <li><a href="#none">이벤트 등록</a></li>
+                    <li><a href="#none">이벤트 관리</a></li>
+                  </ul>
+                </li>
+                <li style="width: 100%;"><a><i class="fa fa-line-chart"></i> 통계</a></li>
+                <li style="width: 100%;"><a><i class="fa fa-gear"></i> 관리자 권한<span class="fa fa-chevron-down"></span></a>
+                  <ul class="nav child_menu">
+                    <li><a href="#none">계정 관리</a></li>
+                    <li><a href="#none">권한 관리</a></li>
+                    <li><a href="#none">관리자 로그</a></li>
+                  </ul>
+                </li>
+                <li style="width: 100%;"><a><i class="fa fa-sign-in"></i> 가입 승인</a></li>
+              </ul>
+            </div>
+            <!-- /sidebar menu -->
+          </div>
+        </div>
+
+        <!-- top navigation -->
+        <div class="top_nav">
+            <div class="nav_menu">
+                <div class="nav toggle">
+                  <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+                </div>
+                <nav class="nav navbar-nav">
+                <ul class=" navbar-right">
+                  <li class="nav-item dropdown open" style="padding-left: 15px;">
+                    <a href="javascript:;" class="user-profile dropdown-toggle" aria-haspopup="true" id="navbarDropdown" data-toggle="dropdown" aria-expanded="false">
+                      <img src="images/img.jpg" alt="">John Doe
+                    </a>
+                    <div class="dropdown-menu dropdown-usermenu pull-right" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item"  href="javascript:;"> Profile</a>
+                        <a class="dropdown-item"  href="javascript:;">
+                          <span class="badge bg-red pull-right">50%</span>
+                          <span>Settings</span>
+                        </a>
+                    <a class="dropdown-item"  href="javascript:;">Help</a>
+                      <a class="dropdown-item"  href="login.html"><i class="fa fa-sign-out pull-right"></i> Log Out</a>
+                    </div>
+                  </li>
+  
+                  <li role="presentation" class="nav-item dropdown open">
+                    <a href="javascript:;" class="dropdown-toggle info-number" id="navbarDropdown1" data-toggle="dropdown" aria-expanded="false">
+                      <i class="fa fa-envelope-o"></i>
+                      <span class="badge bg-green">6</span>
+                    </a>
+                    <ul class="dropdown-menu list-unstyled msg_list" role="menu" aria-labelledby="navbarDropdown1">
+                      <li class="nav-item">
+                        <a class="dropdown-item">
+                          <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                          <span>
+                            <span>John Smith</span>
+                            <span class="time">3 mins ago</span>
+                          </span>
+                          <span class="message">
+                            Film festivals used to be do-or-die moments for movie makers. They were where...
+                          </span>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="dropdown-item">
+                          <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                          <span>
+                            <span>John Smith</span>
+                            <span class="time">3 mins ago</span>
+                          </span>
+                          <span class="message">
+                            Film festivals used to be do-or-die moments for movie makers. They were where...
+                          </span>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="dropdown-item">
+                          <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                          <span>
+                            <span>John Smith</span>
+                            <span class="time">3 mins ago</span>
+                          </span>
+                          <span class="message">
+                            Film festivals used to be do-or-die moments for movie makers. They were where...
+                          </span>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="dropdown-item">
+                          <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                          <span>
+                            <span>John Smith</span>
+                            <span class="time">3 mins ago</span>
+                          </span>
+                          <span class="message">
+                            Film festivals used to be do-or-die moments for movie makers. They were where...
+                          </span>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <div class="text-center">
+                          <a class="dropdown-item">
+                            <strong>See All Alerts</strong>
+                            <i class="fa fa-angle-right"></i>
+                          </a>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        <!-- /top navigation -->
+
+
+        <!-- page content -->
+        
+        <div class="right_col" role="main">
+            <div class="col-md-12 col-sm-12 ">
+              <div class="page-title">
+                <div class="title_left">
+                  <h3>이벤트 등록</h3>
+                </div>
+              </div>
+              <div class="x_panel" style="padding-top: 30px;">
+                <div class="input-group justify-content-between">
+
+                  <form name="" id="" method="POST" style="width: 100%;">
+                    <div class="table-responsive">
+                    <table class="table jambo_table bulk_action">
+                      <colgroup>
+                        <col width="200">
+                        <col width="*">
+                      </colgroup>
+                      <tbody>
+                        <tr>
+                            <th scope="row" class="bg-gray-100 text-center">이벤트 명</th>
+                            <td colspan="2">
+                              <input type="text" name="" id="" value="" class="form-control"/>
+                           </td>
+                          </tr>
+                        <tr>
+                          <th scope="row" class="text-center">이벤트 기간</th>
+                          <td colspan="2">
+                            <div class="datepicker_wrap">
+                              <input id="" name="date" class="datepicker form-control" type="date" required="required" onfocus="this.type='date'">
+                              <input id="" name="date" class="datepicker form-control" type="date" required="required" onfocus="this.type='date'">
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="bg-gray-100 text-center">거래소</th>
+                            <td colspan="2">
+                                <select name="" id="" class="form-control">
+                                <option value="">BitMEX</option>
+                                <option value=""></option>
+                                <option value=""></option>
+                                <option value=""></option>
+                              </select>
+                            </td>
+                        </tr> 
+                        <tr>
+                            <th scope="row" class="bg-gray-100 text-center">할인율</th>
+                            <td colspan="2">
+                              <input type="text" name="" id="" value="" class="form-control col-md-7">
+                              <div class="col-md-1 txt-unit text-left">%</div>
+                              <div class="col-md-4 p-0 m-0">
+                                <button type="button" class="btn btn-success btn-sm col-md-6 m-0 btn-frm">미리 적용해보기</button>
+                                <button type="button" class="btn btn-success btn-sm col-md-6 m-0 btn-frm">저장</button>
+                              </div>
+                            </td>
+                          </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  </form> 
+                </div>
+
+                <div class="ln_solid"></div>
+
+                <div class="input-group justify-content-between">
+                    <h1 class="page-sub-title">이벤트 명</h1>
+                    <button type="button" class="btn btn-light btn-sm border">EXCEL 다운로드</button>
+                </div>  
+                <div class="table-responsive">
+                  <table class="table jambo_table bulk_action">
+                    <colgroup>
+                        <col width="16%"/>
+                        <col width="20%"/>
+                        <col width="20%"/>
+                        <col width="22%"/>
+                        <col width="22%"/>
+                    </colgroup>
+                    <thead>
+                      <tr class="headings">
+                        <th class="column-title" style="text-align: center;">거래소</th>
+                        <th class="column-title" style="text-align: center;">이용권 명</th>
+                        <th class="column-title" style="text-align: center;">기본 가격</th>
+                        <th class="column-title" style="text-align: center;">할인 가격</th>
+                        <th class="column-title" style="text-align: center;">이벤트 적용 금액</th>
+                      </tr>
+                    </thead>
+
+                    <tbody>
+                      <tr class="even pointer">
+                        <td class=" " style="text-align: center;">BitMEX</td>
+                        <td class=" " style="text-align: center;">365일 권</td>
+                        <td class=" " style="text-align: center;">1,020,000</td>
+                        <td class=" " style="text-align: center;">153,000 (15%)</td>
+                        <td class=" " style="text-align: center;">867,000</td>
+                      </tr>
+                      <tr class="odd pointer">
+                        <td class=" " style="text-align: center;">BitMEX</td>
+                        <td class=" " style="text-align: center;">365일 권</td>
+                        <td class=" " style="text-align: center;">1,020,000</td>
+                        <td class=" " style="text-align: center;">153,000 (15%)</td>
+                        <td class=" " style="text-align: center;">867,000</td>
+                      </tr>
+                      <tr class="even pointer">
+                        <td class=" " style="text-align: center;">BitMEX</td>
+                        <td class=" " style="text-align: center;">365일 권</td>
+                        <td class=" " style="text-align: center;">1,020,000</td>
+                        <td class=" " style="text-align: center;">153,000 (15%)</td>
+                        <td class=" " style="text-align: center;">867,000</td>
+                      </tr>
+                      <tr class="odd pointer">
+                        <td class=" " style="text-align: center;">BitMEX</td>
+                        <td class=" " style="text-align: center;">365일 권</td>
+                        <td class=" " style="text-align: center;">1,020,000</td>
+                        <td class=" " style="text-align: center;">153,000 (15%)</td>
+                        <td class=" " style="text-align: center;">867,000</td>
+                      </tr>
+                      <tr class="even pointer">
+                        <td class=" " style="text-align: center;">BitMEX</td>
+                        <td class=" " style="text-align: center;">365일 권</td>
+                        <td class=" " style="text-align: center;">1,020,000</td>
+                        <td class=" " style="text-align: center;">153,000 (15%)</td>
+                        <td class=" " style="text-align: center;">867,000</td>
+                      </tr>
+                      <tr class="odd pointer">
+                        <td class=" " style="text-align: center;">BitMEX</td>
+                        <td class=" " style="text-align: center;">365일 권</td>
+                        <td class=" " style="text-align: center;">1,020,000</td>
+                        <td class=" " style="text-align: center;">153,000 (15%)</td>
+                        <td class=" " style="text-align: center;">867,000</td>
+                      </tr>
+                      <tr class="even pointer">
+                        <td class=" " style="text-align: center;">BitMEX</td>
+                        <td class=" " style="text-align: center;">365일 권</td>
+                        <td class=" " style="text-align: center;">1,020,000</td>
+                        <td class=" " style="text-align: center;">153,000 (15%)</td>
+                        <td class=" " style="text-align: center;">867,000</td>
+                      </tr>
+                      <tr class="odd pointer">
+                        <td class=" " style="text-align: center;">BitMEX</td>
+                        <td class=" " style="text-align: center;">365일 권</td>
+                        <td class=" " style="text-align: center;">1,020,000</td>
+                        <td class=" " style="text-align: center;">153,000 (15%)</td>
+                        <td class=" " style="text-align: center;">867,000</td>
+                      </tr>
+
+                      <tr class="even pointer">
+                        <td class=" " style="text-align: center;">BitMEX</td>
+                        <td class=" " style="text-align: center;">365일 권</td>
+                        <td class=" " style="text-align: center;">1,020,000</td>
+                        <td class=" " style="text-align: center;">153,000 (15%)</td>
+                        <td class=" " style="text-align: center;">867,000</td>
+                      </tr>
+                      <tr class="odd pointer">
+                        <td class=" " style="text-align: center;">BitMEX</td>
+                        <td class=" " style="text-align: center;">365일 권</td>
+                        <td class=" " style="text-align: center;">1,020,000</td>
+                        <td class=" " style="text-align: center;">153,000 (15%)</td>
+                        <td class=" " style="text-align: center;">867,000</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div>
+                </div> 
+              </div>
+            </div>
+          </div>
+        <!-- /page content -->
+
+        <!-- footer content -->
+        <footer>
+          <div class="clearfix"></div>
+        </footer>
+        <!-- /footer content -->
+      </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="../vendors/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap -->
+   <script src="../vendors/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- FastClick -->
+    <script src="../vendors/fastclick/lib/fastclick.js"></script>
+    <!-- NProgress -->
+    <script src="../vendors/nprogress/nprogress.js"></script>
+    <!-- iCheck -->
+    <script src="../vendors/iCheck/icheck.min.js"></script>
+
+    <!-- Custom Theme Scripts -->
+    <script src="../build/js/custom.min.js"></script>
+  </body>
+</html>

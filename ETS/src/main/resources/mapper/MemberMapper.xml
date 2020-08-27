@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="ETS.member.mapper.MemberMapper">
+	
+	<select id="showMember" resultType="cMap" parameterType="dMap">
+		SELECT NO
+		     , REGISTER_DATE
+		     , ID
+		     , NATION
+		     , TIME_ZONE
+		     , TELEGRAM_ID
+		     , VOUCHER_TYPE
+		     , REFERRAL_TYPE
+		     , STATUS
+		     , LANGUAGE_OF_TELEGRAM
+		FROM member
+		
+		WHERE 1=1
+		
+			<if test="@org.apache.commons.lang.StringUtils@isNotEmpty(searchID)">
+				AND ID like '%${searchID}%'
+			</if>
+			
+			<if test="@org.apache.commons.lang.StringUtils@isNotEmpty(searchTelegramID)">
+				AND TELEGRAM_ID like '%${searchTelegramID}%'
+			</if>
+			
+			<if test="@org.apache.commons.lang.StringUtils@isNotEmpty(voucherType)">
+				AND VOUCHER_TYPE like '%${voucherType}%'
+			</if>
+			
+			<if test="@org.apache.commons.lang.StringUtils@isNotEmpty(searchType2)">
+				AND NATION like '%${searchType2}%'
+				(OR TIME_ZONE like '%${searchType2}%'
+				OR LANGUAGE_OF_TELEGRAM like '%${searchType2}%')
+			</if>
+			
+			<if test="@org.apache.commons.lang.StringUtils@isNotEmpty(scopeRow)">
+			 	<choose>
+			 		<when test='@org.apache.commons.lang.StringUtils@isNotEmpty(listnum)'>
+			 			<if test='listNum.equals("tw")'>
+			 				LIMIT ${scopeRow},20
+			 			</if>
+			 			<if test='listNum.equals("tt")'>
+			 				LIMIT ${scopeRow},30
+			 			</if>
+			 			<if test='listNum.equals("ft")'>
+			 				LIMIT ${scopeRow},50
+			 			</if>
+			 			<if test='listNum.equals("st")'>
+			 				LIMIT ${scopeRow},70
+			 			</if>
+			 			<if test='listNum.equals("hd")'>
+			 				LIMIT ${scopeRow},100
+			 			</if>
+			 			<if test='listNum.equals("th")'>
+			 				LIMIT ${scopeRow},200
+			 			</if>
+			 		</when>
+			 		<otherwise>
+		 				LIMIT ${scopeRow}, ${rowCount}
+		 			</otherwise>
+		 		</choose>
+	 		</if>
+	 		
+	</select>
+	
+	<select id="showMemberCount" resultType="int" parameterType="cMap">
+		SELECT COUNT(*) AS cnt FROM member
+	</select>
+	
+	<select id="showNormalOrder" resultType="cMap" parameterType="dMap">
+		SELECT NO
+			 , ORDER_DATE
+			 , EXCHANGE
+			 , ORDER_ID
+			 , SYMBOL
+			 , TYPE
+			 , POSITION
+			 , LEVERAGE
+			 , OPEN_PRIVACY
+			 , OPEN_QTY
+			 , TAKE_PROFIT1_PRICE
+			 , TAKE_PROFIT1_QTY
+			 , TAKE_PROFIT1_TRAILING
+			 , TAKE_PROFIT2_PRICE
+			 , TAKE_PROFIT2_QTY
+			 , TAKE_PROFIT2_TRAILING
+			 , STOP_LOSS_PRICE
+			 , STOP_LOSS_QTY
+			 , STATUS
+		FROM normalOrder
+	</select>
+
+</mapper>

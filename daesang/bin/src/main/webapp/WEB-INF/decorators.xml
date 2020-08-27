@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<decorators defaultdir="/decorators">
+	<decorator name="default" page="default_decorator.ftl">
+		<pattern>/*</pattern>
+	</decorator>
+	
+	<decorator name="default_photo" page="default_decorator_photo.ftl">
+		<pattern>/index_photo</pattern>
+		<pattern>/member/introduce</pattern>
+		<pattern>/info/guideWay</pattern>
+		<pattern>/info/guideRules</pattern>
+		<pattern>/member/application</pattern>
+		<pattern>/mypage/mypageGUpdate</pattern>
+		<pattern>/filming/**</pattern>
+		<pattern>/index_photo</pattern>
+	</decorator>
+	
+	<excludes>
+		<pattern>/*.jsp</pattern>
+		<pattern>/*.html</pattern>
+		<pattern>/font*</pattern>
+		<pattern>/js*</pattern>
+		<pattern>/css*</pattern>
+		<pattern>/images*</pattern>
+		<pattern>*/error*</pattern>
+		<pattern>*/ajax*</pattern>
+		<pattern>*/common/*</pattern>
+		<pattern>*/api/*</pattern>
+		<pattern>/inipay*</pattern>
+	</excludes>
+</decorators>

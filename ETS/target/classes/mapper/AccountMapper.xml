@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="ETS.adminAuth.mapper.AccountMapper">
+
+	<select id="selectAccountList" resultType="cMap" parameterType="dMap">
+		SELECT NO
+		     , ID
+		     , PASSWORD
+		     , PASSWORD_RE
+		     , NAME
+		     , DEPARTMENT
+		     , POSITION
+		FROM adminAuth
+		
+		WHERE 1=1
+			
+	</select>
+	
+	<insert id="insertAccountList" parameterType="dMap">
+		INSERT INTO adminAuth (ID, PASSWORD, PASSWORD_RE, NAME, DEPARTMENT, POSITION)
+		VALUES (#{id}, #{password}, #{passwordRe}, #{name}, #{department}, #{position})
+	</insert>
+
+</mapper>

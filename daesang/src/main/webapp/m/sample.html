@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="Content-Script-Type" content="text/javascript" />
+	<meta http-equiv="Content-Style-Type" content="text/css" />
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+	<meta name="description" content="" />
+	<meta property="og:title" content="" />
+	<meta property="og:url" content="" />
+	<meta property="og:image" content="" />
+	<meta property="og:description" content="" />
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width" />
+	<meta name="format-detection" content="telephone=no" />
+
+	<link rel="shortcut icon" type="image/x-icon" href="">
+	<link rel="stylesheet" href="../css/swiper.min.css" />
+	<link rel="stylesheet" href="../css/animate.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+	<link rel="stylesheet" href="https://kenwheeler.github.io/slick/slick/slick.css">
+	<link rel="stylesheet" href="css/common.css" />
+	
+	<script src="../js/jquery-1.11.3.min.js"></script>
+	<script src="../js/swiper.min.js"></script>
+	<script src="../js/wow.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	<script src="../js/inewsticker.js"></script>
+	<script src="js/ui.js"></script>
+	<!--[if (gte IE 6)&(lte IE 8)]><script type="text/javascript" src="../js/selectivizr-min.js"></script><![endif]-->
+	<!--[if lt IE 9]><script src="../js/html5shiv.js"></script><![endif]-->
+	<!--[if lt IE 10]><script src="../js/placeholders.min.js"></script><![endif]-->
+	<title>대상웰라이프</title>
+</head>
+<body>
+<div id="wrap">
+	<div id="header">
+		<div class="header_top">
+			<a href="#" class="btn_menu"></a>
+			<a href="#" class="nav_close"></a>
+			<h1 class="logo"><a href="index.html"><img src="images/logo.png" width="79" alt=""></a></h1>
+			<a href="#" class="btn_search"></a>
+		</div>
+	</div>
+	<div id="nav">
+		<div class="shortcut">
+			<a href="#"><img src="images/ico_gnb1.png" height="41" alt=""></a>
+			<a href="#"><img src="images/ico_gnb2.png" height="45" alt=""></a>
+			<a href="#" class="btn_qna"><img src="images/ico_gnb3.png" height="45" alt=""></a>
+			<a href="#"><img src="images/ico_gnb4.png" height="44" alt=""></a>
+		</div>
+		<div class="menu">
+			<ul>
+				<li><a href="#">NEW</a></li>
+				<li><a href="#">BEST</a></li>
+				<li><a href="#">기능별</a></li>
+				<li><a href="#">성분별</a></li>
+				<li><a href="#">대상별</a></li>
+				<li><a href="#">브랜드별</a></li>
+				<li><a href="sample.html">무료샘플신청</a></li>
+			</ul>
+		</div>
+		<div class="bottom_shortcut">
+			<a href="#"><img src="images/ico_login.png" width="73" alt=""></a>
+			<a href="#"><img src="images/ico_cs.png" width="90" alt=""></a>
+		</div>
+	</div>
+	<div id="container" style="padding-top:50px;">
+		<div class="content_inner">
+			<div class="detail_tab">
+				<ul>
+					<li class="active"><a href="#">뉴케어 오메가</a></li>
+					<li><a href="#">뉴케어 당플렌</a></li>
+				</ul>
+			</div>
+			<div class="detail_content" style="background:#fafafa;text-align:center;">
+				<img src="images/omega.jpg" width="360" alt="">
+			</div>
+		</div>
+	</div>
+	<div id="footer" style="margin-top:0;">
+		<div class="content_inner">
+			<img src="images/footer.jpg" height="152" alt="" />
+		</div>
+	</div>
+	<div id="channel">
+		<img src="images/channel.png" width="100%" alt="" />
+	</div>
+	<div id="popSearch">
+		<img src="images/pop_search.jpg" width="330" alt="">
+		<a href="#" class="btn_close"></a>
+	</div>
+</div>
+<script>
+$(document).ready(function(){
+	$(".detail_tab li").click(function(e){
+        e.preventDefault();
+        $(".detail_tab li").removeClass("active");
+        $(this).addClass("active");
+    });
+});
+</script>
+</body>
+</html>
